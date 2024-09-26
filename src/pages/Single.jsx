@@ -3,16 +3,21 @@ import schedule from '../assets/images/illustration-schedule-posts.webp';
 
 const Single = () => {
   return (
-    <div className="w-full lg:w-44 h-[400px] bg-purple-100 border-none rounded-lg p-4 text-xl overflow-hidden">
-      <div className="">
+    <div className="w-full lg:w-44 bg-purple-100 border-none rounded-lg p-4 text-xl overflow-hidden">
+      {/* Title */}
+      <div className="mb-4">
         <h3 className="text-center font-bold">Schedule to social media</h3>
       </div>
-      <div className="relative">
-        <img src={schedule} alt="" className="w-64 h-32 transform scale-150 rounded-lg absolute lg:left-12 lg:top-12" />
+      
+      {/* Image */}
+      <div className="flex justify-center">
+        <img src={schedule} alt="Schedule posts" className="w-40 h-auto lg:w-64 lg:h-32 rounded-lg" />
       </div>
-      <div>
-        <p className="text-xs relative lg:top-56 lg:left-3 font-semibold">
-          Optimize post timings to publish contents at the perfect time for your audience.
+      
+      {/* Description */}
+      <div className="mt-4 lg:mt-12">
+        <p className="text-xs text-center lg:text-left font-semibold ">
+          Optimize post timings to publish content at the perfect time <br /> for your audience.
         </p>
       </div>
     </div>
@@ -20,3 +25,4 @@ const Single = () => {
 };
 
 export default Single;
+``
